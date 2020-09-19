@@ -15,9 +15,7 @@ class Articlepage extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch(
-			`https://camplogs-backend.herokuapp.com/post${this.props.location.pathname}`
-		)
+		fetch(`/post${this.props.location.pathname}`)
 			.then((response) => response.json())
 			.then((data) => {
 				return this.setState({

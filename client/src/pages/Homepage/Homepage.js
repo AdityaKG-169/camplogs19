@@ -14,9 +14,7 @@ class Homepage extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch(
-			`https://camplogs-backend.herokuapp.com${this.props.location.pathname.toLowerCase()}`
-		)
+		fetch(`${this.props.location.pathname.toLowerCase()}`)
 			.then((response) => response.json())
 			.then((data) => {
 				return this.setState({

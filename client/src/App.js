@@ -17,17 +17,18 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("https://camplogs-backend.herokuapp.com")
+		fetch("/")
 			.then((response) => response.json())
 			.then((data) => {
 				return this.setState({
 					posts: data,
 				});
 			});
-		setTimeout(() => {
-			document.cookie =
-				"MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-		}, 600000);
+	}
+
+	componentWillUnmount() {
+		document.cookie =
+			"MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 	}
 
 	render() {
