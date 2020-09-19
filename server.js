@@ -39,7 +39,7 @@ mongoose.connect(MONGO_URI, {
 
 /**********SETTING UP THE ROUTES***********/
 
-app.get("/", async (req, res) => {
+app.get("/allposts", async (req, res) => {
 	try {
 		const feed = await posts.find();
 		if (feed) res.status(200).json(feed);

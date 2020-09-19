@@ -17,7 +17,7 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("/")
+		fetch("/allposts")
 			.then((response) => response.json())
 			.then((data) => {
 				return this.setState({

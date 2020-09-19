@@ -14,7 +14,7 @@ class Homepage extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch(`${this.props.location.pathname.toLowerCase()}`)
+		fetch(`/allposts${this.props.location.pathname.toLowerCase()}`)
 			.then((response) => response.json())
 			.then((data) => {
 				return this.setState({
