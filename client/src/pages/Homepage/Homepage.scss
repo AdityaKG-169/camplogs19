@@ -1,0 +1,53 @@
+.homepage-main-div {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.recently-added-main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+}
+
+hr {
+    width: 100%;
+    margin-top: 1.2em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom-page {
+    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .homepage-main-div {
+        width: 88%;
+        margin-right: 1%;
+        margin-left: 12%;
+    }
+}
+
+.loading {
+    width: 50%;
+    position: relative;
+    height: 2px;
+    background-color: red;
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

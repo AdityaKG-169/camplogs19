@@ -1,0 +1,52 @@
+.recently-added-div {
+	height: auto;
+	width: 325px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.03);
+
+	& .recently-added-image {
+		height: 200px;
+		width: 100%;
+	}
+
+	& h1 {
+		font-size: 1.5em;
+		padding: 0;
+		margin: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	& .extra-text {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+
+		& .new {
+			color: black;
+			font-weight: 800;
+		}
+	}
+
+	& p {
+		color: rgba(0, 0, 0, 0.6);
+		line-height: 1.4em;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+.read-more {
+	color: black;
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+	.recently-added-div {
+		height: auto;
+		width: 280px;
+		margin: auto;
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+}

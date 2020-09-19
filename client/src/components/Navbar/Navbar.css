@@ -1,0 +1,129 @@
+.outer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav {
+  text-align: right;
+  height: 10vh;
+  line-height: 13vh;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.logo-text {
+  float: left;
+  color: black;
+  line-height: 13vh;
+  font-size: 1.5em;
+  padding-left: 10px;
+  font-size: 1.8em;
+  font-family: "Philosopher", sans-serif;
+  letter-spacing: 3px;
+  margin-left: 10%;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+  z-index: 1;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 10px;
+  line-height: 13vh;
+  font-size: 1.2em;
+  z-index: 1;
+}
+
+.menu a:last-child {
+  margin-right: 5%;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  display: none;
+  width: 26px;
+  float: right;
+  line-height: 13vh;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .logo-text {
+    float: left;
+    color: black;
+    line-height: 13vh;
+    font-size: 1.5em;
+    padding-left: 10px;
+    font-size: 1.8em;
+    font-family: "Philosopher", sans-serif;
+    letter-spacing: 3px;
+    margin-left: 2%;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    z-index: 100;
+    background-color: white;
+  }
+}
+
+.mobile-banner {
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+
+.mobile-banner .mobile-banner-heading {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.mobile-banner .mobile-banner-heading a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 500px) {
+  .mobile-banner .mobile-banner-heading {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,143 @@
+.article-div {
+  width: 60%;
+  margin: auto;
+  margin-top: 8vh;
+}
+
+.article-div h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.article-div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vh;
+}
+
+.article-div p {
+  margin: 0;
+  padding: 0;
+}
+
+.article-div .main-body-post h2 {
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 2em;
+  margin-bottom: -0.5em;
+}
+
+.article-div .main-body-post > p {
+  margin-top: 1.1em;
+  line-height: 33px;
+  font-size: 22px;
+  color: #292929 !important;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 550px) {
+  .article-div {
+    width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+  }
+}
+
+.faIcons {
+  padding: 5px;
+  font-size: 1.2em;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  background-color: black;
+}
+
+.faIcons:hover {
+  opacity: 0.7;
+}
+
+.articleLikeIcon {
+  cursor: pointer;
+  font-size: 1.5em;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  margin-top: 5vh;
+}
+
+.subtitle {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+.sub-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sub-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.sub-info p {
+  padding-right: 2%;
+  font-size: 1em;
+}
+
+.fa-heart:before {
+  content: "\f004";
+  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .article-div .article-title {
+    font-size: 30px;
+  }
+  .sub-info .contact-links {
+    display: none;
+  }
+  .article-div .main-body-post h2 {
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  .article-div .main-body-post > p {
+    line-height: 28px;
+    font-size: 18px;
+    color: #292929 !important;
+    font-weight: 500;
+  }
+}
+
+.extra-text {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.extra-text > a {
+  text-decoration: underline;
+}
+
+.recently-added-main-text {
+  all: unset;
+}
+
+.recently-added-main-text * {
+  all: unset;
+}
+/*# sourceMappingURL=ArticlePage.css.map */
